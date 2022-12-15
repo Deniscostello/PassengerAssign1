@@ -1,5 +1,15 @@
 package ie.atu.PassengerAssign1;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@AllArgsConstructor
+@Getter
+@Setter
+@NoArgsConstructor
+
 public class Passenger {
     //instance variables
     private String Title;
@@ -7,15 +17,6 @@ public class Passenger {
     private String ID;
     private String Phone;
     private int Age;
-
-    //Passenger constructor
-    public Passenger(String title, String Name, String ID, String Phone, int Age){
-        setTitle(title);
-        setName(Name);
-        setID(ID);
-        setPhone(Phone);
-        setAge(Age);
-    }
 
     //Name get and set method
     public String getName() {
