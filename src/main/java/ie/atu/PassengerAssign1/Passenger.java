@@ -5,11 +5,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@AllArgsConstructor
 @Getter
 @Setter
 @NoArgsConstructor
-
 public class Passenger {
     //instance variables
     private String Title;
@@ -17,6 +15,14 @@ public class Passenger {
     private String ID;
     private String Phone;
     private int Age;
+
+    public Passenger(String title, String name, String id, String phone, int age) {
+        setTitle(title);
+        setName(name);
+        setID(id);
+        setPhone(phone);
+        setAge(age);
+    }
 
     //Name get and set method
     public String getName() {
